@@ -1,0 +1,19 @@
+{
+  "name": "generated-readme",
+  "version": "1.0.0",
+  "description": "Application made using node.js to generate a markdown of a README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeeveRW11/generated-readMe.git"
+  },
+  "author": "Keeve Whyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeeveRW11/generated-readMe/issues"
+  },
+  "homepage": "https://github.com/KeeveRW11/generated-readMe#readme"
+}
