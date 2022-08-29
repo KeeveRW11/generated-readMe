@@ -11,9 +11,9 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // The function used to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
-  # ${data.project}
+  # ${answers.project}
 
   ## Table of Contents
   * [Description](#description)
@@ -24,21 +24,21 @@ function generateMarkdown(data) {
   * [License](#license)
   * [For More Details](#questions)
   ## Description
-  ${data.description}
+  ${answers.description}
   ## Installation 
-  ${data.instructions}
+  ${answers.instructions}
   ## Usage 
-  ${data.usage}
+  ${answers.usage}
   ## Contribution Guidelines
-  ${data.contribution}
+  ${answers.contribution}
   ## Test
-  ${data.test}
+  ${answers.test}
   ## License
-  ${data.license}
+  ${answers.license}
   ## For More Details
   Contact me:
-  Github:[${data.link}](https://github.com/KeeveRW11)
-  Email:[${data.email}](keevewhyte+github@gmail.com)
+  Github:[${answers.link}](https://github.com/KeeveRW11)
+  Email:[${answers.email}](keevewhyte+github@gmail.com)
 
 `;
 }

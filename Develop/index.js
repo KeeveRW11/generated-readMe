@@ -37,7 +37,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'instructions,',
+            name: 'instructions',
             message: 'Please provide installation instructions. ()Required',
             validate: instructionsInput => {
                 if (instructionsInput) {
@@ -50,7 +50,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'usage,',
+            name: 'usage',
             message: 'Please provide usage information. ()Required',
             validate: informationInput => {
                 if (informationInput) {
@@ -63,7 +63,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'contribution,',
+            name: 'contribution',
             message: 'Please provide information about contribution guidelines. ()Required',
             validate: contributionInput => {
                 if (contributionInput) {
@@ -76,7 +76,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'test,',
+            name: 'test',
             message: 'Please provide test instructions for readers to follow. ()Required',
             validate: testInput => {
                 if (testInput) {
@@ -89,9 +89,14 @@ const questions = () => {
         },
         {
             type: 'list',
-            name: 'license,',
+            name: 'license',
             message: 'What license did you use to complete your project?',
-            choices:['MIT License','Mozilla Public License','Berkeley Source Distribution License','Unlicense'],           
+            choices:[
+                "MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", 
+                "APACHE 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)", 
+                "artistic-2.0 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)", 
+                "bsl-1.0 [![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)" , 
+                "None"],          
         },
         {
             type: 'input',
@@ -119,28 +124,18 @@ const questions = () => {
                 }
             }
         }
-    ]
-)};
+    // Function used to write README file    
+    ]).then(answers => {
+        writeToFile(answers)
+        console.log('Successfully wrote to README.md!')
+    }).catch((err) => console.error(err));
 
-
-// Function used to write README file
-function writeToFile(fileName, data) {
-    writeFile(fileName, data, err => {
-        if (err) {
-            throw err;
-        }
-    });
-}
+};
 
 // The function used to initialize app
-function init() {
-    prompt(questions).then(answers => {
-        const response = generateMarkdown(answers);
-        console.log(answers);
-
-        writeToFile("README.md",response);
-    })
+const writeToFile = answers => {
+    writeFile('README.md', generateMarkdown(answers))
 }
 
 // Function call used to initialize app
-init();
+questions();
