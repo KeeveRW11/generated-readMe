@@ -4,14 +4,14 @@ function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
       return "https://img.shields.io/badge/License-MIT-yellow.svg"; 
-    /*case "APACHE 2.0":
+    case "APACHE 2.0":
       return "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
     case "artistic-2.0":
       return "https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg"; 
     case "bsl-1.0":
       return "https://img.shields.io/badge/License-Boost%201.0-lightblue.svg";
     case "Unlicense":
-      return "https://img.shields.io/badge/license-Unlicense-blue.svg";*/
+      return "https://img.shields.io/badge/license-Unlicense-blue.svg";
     default:
       return "";
   }    
