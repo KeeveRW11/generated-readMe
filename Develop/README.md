@@ -1,5 +1,5 @@
 
-  # gear
+  # ReadMe Generator
 
   ## Table of Contents
   * [Description](#description)
@@ -10,19 +10,19 @@
   * [License](#license)
   * [For More Details](#questions)
   ## Description
-  ergaeag
+  This is a readme generator using node.js and inquirer to create a readme.md file
   ## Installation 
-  eragerg
+  Clone file from the repository that is shared
   ## Usage 
-  ytsjytj
+  The file can be used as many times as you like. It is perfect for creating quick readME for any future project
   ## Contribution Guidelines
-  tyuejttdsn
+  Contributions are accepted. Please contact me at my email below for further questions.
   ## Test
-  abtrhrt
+  keevewhyte+github@gmail.com
   ## License
-  MIT
+  ![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## For More Details
   Contact me:
-  Github:[rtshrt](https://github.com/KeeveRW11)
-  Email:[rsttrhr](keevewhyte+github@gmail.com)
+  Github:[https://github.com/KeeveRW11](https://github.com/KeeveRW11)
+  Email:[keevewhyte+github@gmail.com](keevewhyte+github@gmail.com)
 
