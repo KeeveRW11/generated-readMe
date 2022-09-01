@@ -92,11 +92,11 @@ const questions = () => {
             name: 'license',
             message: 'What license did you use to complete your project?',
             choices:[
-                "MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", 
-                "APACHE 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)", 
-                "artistic-2.0 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)", 
-                "bsl-1.0 [![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)" , 
-                "None"],          
+                "MIT",
+                "APACHE 2.0",
+                "artistic-2.0",
+                "bsl-1.0",
+                "Unlicense"]          
         },
         {
             type: 'input',
